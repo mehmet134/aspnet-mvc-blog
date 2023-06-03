@@ -12,7 +12,7 @@ namespace App.Web.Mvc.Controllers
         {
             return View();
         }
-        public IActionResult ForgotPassaword()
+        public IActionResult ForgotPassword()
         {
             return View();
         }

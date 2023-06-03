@@ -4,7 +4,7 @@ namespace App.Web.Mvc.Controllers.Admin
 {
     public class BaseAdminController : Controller
     {
-        public IActionResult Index()
+        public IActionResult Index1()
         {
             return View();
         }
