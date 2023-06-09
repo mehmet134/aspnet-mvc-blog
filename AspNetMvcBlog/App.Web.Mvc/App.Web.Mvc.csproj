@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk.Web">
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
 
   <PropertyGroup>
     <TargetFramework>net6.0</TargetFramework>
@@ -12,6 +12,93 @@
 
   <ItemGroup>
     <Folder Include="Views\BaseAdmin\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="wwwroot\css\style.css" />
+    <None Include="wwwroot\images\about.jpg" />
+    <None Include="wwwroot\images\author.jpg" />
+    <None Include="wwwroot\images\blog-user-2.jpg" />
+    <None Include="wwwroot\images\blog-user-3.jpg" />
+    <None Include="wwwroot\images\cat\cat-2.jpg" />
+    <None Include="wwwroot\images\cat\cat-3.jpg" />
+    <None Include="wwwroot\images\cat\cat-4.jpg" />
+    <None Include="wwwroot\images\f1.jpg" />
+    <None Include="wwwroot\images\f2.jpg" />
+    <None Include="wwwroot\images\f3.jpg" />
+    <None Include="wwwroot\images\f4.jpg" />
+    <None Include="wwwroot\images\fashion\b6.jpg" />
+    <None Include="wwwroot\images\fashion\bg-banner-2.jpg" />
+    <None Include="wwwroot\images\fashion\bg-banner.jpg" />
+    <None Include="wwwroot\images\fashion\bg-fashion.jpg" />
+    <None Include="wwwroot\images\fashion\img-1.jpg" />
+    <None Include="wwwroot\images\fashion\img-2.jpg" />
+    <None Include="wwwroot\images\fashion\img-3.jpg" />
+    <None Include="wwwroot\images\fashion\img-4.jpg" />
+    <None Include="wwwroot\images\fashion\img-5.jpg" />
+    <None Include="wwwroot\images\fashion\img-6.jpg" />
+    <None Include="wwwroot\images\fashion\img-7.jpg" />
+    <None Include="wwwroot\images\fashion\img-lg-1.jpg" />
+    <None Include="wwwroot\images\fashion\img-lg-2.jpg" />
+    <None Include="wwwroot\images\fashion\img-lg-4.jpg" />
+    <None Include="wwwroot\images\fashion\img-md-1.jpg" />
+    <None Include="wwwroot\images\fashion\single-img1.png" />
+    <None Include="wwwroot\images\fashion\single-img2.png" />
+    <None Include="wwwroot\images\favicon.ico" />
+    <None Include="wwwroot\images\liammason.png" />
+    <None Include="wwwroot\images\logo-w.png" />
+    <None Include="wwwroot\images\logo.png" />
+    <None Include="wwwroot\images\news\f1.jpg" />
+    <None Include="wwwroot\images\news\f10.jpg" />
+    <None Include="wwwroot\images\news\f11.jpg" />
+    <None Include="wwwroot\images\news\f12.jpg" />
+    <None Include="wwwroot\images\news\f2.jpg" />
+    <None Include="wwwroot\images\news\f3.jpg" />
+    <None Include="wwwroot\images\news\f4.jpg" />
+    <None Include="wwwroot\images\news\f5.jpg" />
+    <None Include="wwwroot\images\news\f6.jpg" />
+    <None Include="wwwroot\images\news\f7.jpg" />
+    <None Include="wwwroot\images\news\f8.jpg" />
+    <None Include="wwwroot\images\news\f9.jpg" />
+    <None Include="wwwroot\images\news\img-1.jpg" />
+    <None Include="wwwroot\images\news\news-1.jpg" />
+    <None Include="wwwroot\images\news\news-2.jpg" />
+    <None Include="wwwroot\images\news\news-3.jpg" />
+    <None Include="wwwroot\images\news\news-4.jpg" />
+    <None Include="wwwroot\images\news\news-5.jpg" />
+    <None Include="wwwroot\images\news\news-6.jpg" />
+    <None Include="wwwroot\images\news\thumb-1.jpg" />
+    <None Include="wwwroot\images\news\thumb-2.jpg" />
+    <None Include="wwwroot\images\sidebar-banner3.png" />
+    <None Include="wwwroot\images\slider\slider1.jpg" />
+    <None Include="wwwroot\images\slider\slider2.jpg" />
+    <None Include="wwwroot\images\slider\slider3.jpg" />
+    <None Include="wwwroot\js\custom.js" />
+    <None Include="wwwroot\plugins\bootstrap\css\bootstrap.min.css" />
+    <None Include="wwwroot\plugins\bootstrap\js\bootstrap.min.js" />
+    <None Include="wwwroot\plugins\bootstrap\js\popper.min.js" />
+    <None Include="wwwroot\plugins\google-map\gmap.js" />
+    <None Include="wwwroot\plugins\google-map\images\marker.png" />
+    <None Include="wwwroot\plugins\instafeed-js\instafeed.min.js" />
+    <None Include="wwwroot\plugins\jquery\jquery.js" />
+    <None Include="wwwroot\plugins\magnific-popup\magnific-popup.css" />
+    <None Include="wwwroot\plugins\magnific-popup\magnific-popup.js" />
+    <None Include="wwwroot\plugins\owl-carousel\owl.carousel.min.css" />
+    <None Include="wwwroot\plugins\owl-carousel\owl.carousel.min.js" />
+    <None Include="wwwroot\plugins\owl-carousel\owl.theme.default.min.css" />
+    <None Include="wwwroot\plugins\slick-carousel\ajax-loader.gif" />
+    <None Include="wwwroot\plugins\slick-carousel\fonts\slick.eot" />
+    <None Include="wwwroot\plugins\slick-carousel\fonts\slick.svg" />
+    <None Include="wwwroot\plugins\slick-carousel\fonts\slick.ttf" />
+    <None Include="wwwroot\plugins\slick-carousel\fonts\slick.woff" />
+    <None Include="wwwroot\plugins\slick-carousel\slick-theme.css" />
+    <None Include="wwwroot\plugins\slick-carousel\slick.css" />
+    <None Include="wwwroot\plugins\slick-carousel\slick.min.js" />
+    <None Include="wwwroot\plugins\themify\css\themify-icons.css" />
+    <None Include="wwwroot\plugins\themify\fonts\themify.eot" />
+    <None Include="wwwroot\plugins\themify\fonts\themify.svg" />
+    <None Include="wwwroot\plugins\themify\fonts\themify.ttf" />
+    <None Include="wwwroot\plugins\themify\fonts\themify.woff" />
   </ItemGroup>
 
 </Project>
