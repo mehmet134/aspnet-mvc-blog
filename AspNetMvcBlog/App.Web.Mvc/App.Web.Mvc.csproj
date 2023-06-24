@@ -7,14 +7,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Content Remove="Views\BaseAdmin\Index.cshtml" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Folder Include="Views\BaseAdmin\" />
-  </ItemGroup>
-
-  <ItemGroup>
     <None Include="wwwroot\css\style.css" />
     <None Include="wwwroot\images\about.jpg" />
     <None Include="wwwroot\images\author.jpg" />
