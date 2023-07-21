@@ -1,42 +1,25 @@
-﻿using App.Web.Mvc.Models;
+﻿using App.Web.Mvc.Data;
 using Microsoft.AspNetCore.Mvc;
-using System.Diagnostics;
 
 namespace App.Web.Mvc.Controllers
 {
     public class HomeController : Controller
     {
-        public IActionResult Index()
+        Database database = new Database();
+        public IActionResult Index(int? id,string search)
         {
-            return View();
+            var analists = database.AnaList.ToList();
+            if (id.HasValue)
+            {
+                analists = database.AnaList.Where(p =>p.Id == id).ToList();
+            }
+            if(search != null)
+            {
+				analists = database.AnaList.Where(p => p.Name.ToLower().Contains(search.ToLower())).ToList();
+
+
+			}
+			return View(analists);
         }
-        public IActionResult Index2()
-        {
-            return View();
-        }
-        public IActionResult Index3()
-        {
-            return View();
-        }
-        public IActionResult Index4()
-        {
-            return View();
-        }
-        public IActionResult Index5()
-        {
-            return View();
-        }
-        public IActionResult Index6()
-        {
-            return View();
-        }
-		public IActionResult Search()
-		{
-			return View();
-		}
-		public IActionResult Detail()
-		{
-			return View();
-		}
-	}
+    }
 }

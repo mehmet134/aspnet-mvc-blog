@@ -1,0 +1,68 @@
+﻿@model List<UstList>
+
+<nav class="navbar navbar-expand-lg navigation-2 navigation">
+    <a class="navbar-brand text-uppercase d-lg-none" href="#">
+        <img src="~/images/logo.png" alt="" class="img-fluid">
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-collapse" aria-controls="navbar-collapse" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="ti-menu"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbar-collapse">
+        <ul id="menu" class="menu navbar-nav mx-auto">
+            @foreach (var item in Model)
+            {
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        @item.Name
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                       @* <a class="dropdown-item " asp-area="" asp-controller="@item.Name" asp-action="">@item.Name</a>*@
+                        @if (item.Name == "Home")
+                        {
+                            <a class="dropdown-item" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
+                        }
+                        @if (item.Name == "Category")
+                        {
+                            <a class="nav-item" asp-area="" asp-controller="Category" asp-action="Index">Category</a>
+                        }
+                        @if (item.Name == "About")
+                        {
+                            <a class="nav-item" asp-area="" asp-controller="Page" asp-action="Detail">About</a>
+                        }
+                        @if (item.Name == "Blog Posts")
+                        {
+                            <a class="dropdown-item" asp-controller="Blog" asp-action="Search">Search</a>
+                            <a class="dropdown-item" asp-controller="Blog" asp-action="Detail">Detail</a>
+                        }
+                        @if (item.Name == "Contact")
+                        {
+                            <a class="dropdown-item" asp-controller="Auth" asp-action="Login">Login</a>
+                            <a class="dropdown-item" asp-controller="Auth" asp-action="Register">Register</a>
+                            <a class="dropdown-item" asp-controller="Auth" asp-action="ForgotPassword">Forgot Password</a>
+                        }
+                        @if (item.Name == "Post Format")
+                        {
+                            <a class="dropdown-item" href="#">Video Formats</a>
+                            <a class="dropdown-item" href="#">Audio Formats</a>
+                            <a class="dropdown-item" href="#">Quote Formats</a>
+                            <a class="dropdown-item" href="#">Gallery Formats</a>
+                            <a class="dropdown-item" href="#">Image Formats</a>
+                        }
+
+                    </div>
+
+                </li>
+
+            }
+
+
+
+        </ul>
+        <ul class="list-inline mb-0 d-block d-lg-none">
+            <li class="list-inline-item"><a href="#"><i class="ti-facebook"></i></a></li>
+            <li class="list-inline-item"><a href="#"><i class="ti-twitter"></i></a></li>
+            <li class="list-inline-item"><a href="#"><i class="ti-linkedin"></i></a></li>
+            <li class="list-inline-item"><a href="#"><i class="ti-pinterest"></i></a></li>
+        </ul>
+    </div>
+</nav>
